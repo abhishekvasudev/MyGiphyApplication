@@ -15,7 +15,7 @@ You can clone/download the repository and build the project. The project is buil
 MVVM
 
 ### Requirement
-The application consists of a <b> Tab Bar <b> consisting of the following tabs:
+The application consists of a <b> Tab Bar </b> consisting of the following tabs:
 
 #### Feeds Tab:
 • Contains a search bar at the top. <br>
@@ -35,8 +35,8 @@ The application consists of a <b> Tab Bar <b> consisting of the following tabs:
 
 ### Additional Implementation
 • <b>DataStore: </b> Helps maintain single source of truth for the data stored locally. <br>
-• <b> Combine<b> (Alternative for RxSwift). <br>
-• <b> Pagination: <b> The feeds page loads 10 gifs initially and then implements pagination.
+• <b> Combine </b> (Alternative for RxSwift). <br>
+• <b> Pagination: </b> The feeds page loads 10 gifs initially and then implements pagination.
 
 ### Areas of Improvement
 • The logic of download of gifs can be improved. <br>
