@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C397CFB26BC252900F942EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397CFA26BC252900F942EF /* AppDelegate.swift */; };
+		6C397D0226BC252900F942EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C397D0026BC252900F942EF /* Main.storyboard */; };
+		6C397D0426BC252C00F942EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C397D0326BC252C00F942EF /* Assets.xcassets */; };
+		6C397D0726BC252C00F942EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C397D0526BC252C00F942EF /* LaunchScreen.storyboard */; };
+		6C397D1226BC252C00F942EF /* MyGiphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D1126BC252C00F942EF /* MyGiphyTests.swift */; };
+		6C397D1D26BC252C00F942EF /* MyGiphyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D1C26BC252C00F942EF /* MyGiphyUITests.swift */; };
+		6C397D3126BC2CA100F942EF /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D3026BC2CA100F942EF /* FeedsViewController.swift */; };
+		6C397D3626BC2CC100F942EF /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D3526BC2CC100F942EF /* FavouriteViewController.swift */; };
+		6C397D3B26BC2EF100F942EF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D3A26BC2EF100F942EF /* UIImage+Extension.swift */; };
+		6C397D4326BC4E9C00F942EF /* MGColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D4226BC4E9C00F942EF /* MGColorScheme.swift */; };
+		6C397D4826BC4EFA00F942EF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D4726BC4EFA00F942EF /* UIColor+Extension.swift */; };
+		6C397D4D26BC52AE00F942EF /* MGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D4C26BC52AE00F942EF /* MGTabBarController.swift */; };
+		6C397D5826BEFC7400F942EF /* GifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D5726BEFC7400F942EF /* GifTableViewCell.swift */; };
+		6C397D6426BF2CFE00F942EF /* GifDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D6326BF2CFE00F942EF /* GifDataModel.swift */; };
+		6C397D6F26BF2D6F00F942EF /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D6E26BF2D6F00F942EF /* FeedsViewModel.swift */; };
+		6C397D7E26BF2E9A00F942EF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D7D26BF2E9A00F942EF /* EndPoint.swift */; };
+		6C397D8626BF2EAF00F942EF /* URN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D8526BF2EAF00F942EF /* URN.swift */; };
+		6C397D8B26BF2F0B00F942EF /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D8A26BF2F0B00F942EF /* NetworkServiceProvider.swift */; };
+		6C397D9026BF2F4100F942EF /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D8F26BF2F4100F942EF /* URLSessionProvider.swift */; };
+		6C397D9626BF2FBB00F942EF /* GifResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D9526BF2FBB00F942EF /* GifResponse.swift */; };
+		6C397D9E26BF2FE400F942EF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397D9D26BF2FE400F942EF /* NetworkError.swift */; };
+		6C397DA426BF304400F942EF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397DA326BF304400F942EF /* DataStore.swift */; };
+		6C397DAD26BF30C300F942EF /* GifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397DAC26BF30C300F942EF /* GifService.swift */; };
+		6C397DD026C11CBD00F942EF /* FeedsViewModelTestSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397DCF26C11CBC00F942EF /* FeedsViewModelTestSpecification.swift */; };
+		6C397DD526C11DF900F942EF /* MockGifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C397DD426C11DF900F942EF /* MockGifService.swift */; };
+		6C6B3FBE26BFCAAE00CECBB7 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B3FBD26BFCAAE00CECBB7 /* GridCollectionViewCell.swift */; };
+		6C6B3FC126C0013C00CECBB7 /* LoadingGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B3FC026C0013B00CECBB7 /* LoadingGif.gif */; };
+		6C6B3FC326C01D7900CECBB7 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B3FC226C01D7900CECBB7 /* FavouriteViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C397D0E26BC252C00F942EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C397CEF26BC252900F942EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C397CF626BC252900F942EF;
+			remoteInfo = MyGiphy;
+		};
+		6C397D1926BC252C00F942EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C397CEF26BC252900F942EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C397CF626BC252900F942EF;
+			remoteInfo = MyGiphy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C397CF726BC252900F942EF /* MyGiphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGiphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C397CFA26BC252900F942EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C397D0126BC252900F942EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C397D0326BC252C00F942EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C397D0626BC252C00F942EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C397D0826BC252C00F942EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C397D0D26BC252C00F942EF /* MyGiphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGiphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C397D1126BC252C00F942EF /* MyGiphyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphyTests.swift; sourceTree = "<group>"; };
+		6C397D1326BC252C00F942EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C397D1826BC252C00F942EF /* MyGiphyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGiphyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C397D1C26BC252C00F942EF /* MyGiphyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphyUITests.swift; sourceTree = "<group>"; };
+		6C397D1E26BC252C00F942EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C397D3026BC2CA100F942EF /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		6C397D3526BC2CC100F942EF /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		6C397D3A26BC2EF100F942EF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		6C397D4226BC4E9C00F942EF /* MGColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGColorScheme.swift; sourceTree = "<group>"; };
+		6C397D4726BC4EFA00F942EF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		6C397D4C26BC52AE00F942EF /* MGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTabBarController.swift; sourceTree = "<group>"; };
+		6C397D5726BEFC7400F942EF /* GifTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTableViewCell.swift; sourceTree = "<group>"; };
+		6C397D6326BF2CFE00F942EF /* GifDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifDataModel.swift; sourceTree = "<group>"; };
+		6C397D6E26BF2D6F00F942EF /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
+		6C397D7D26BF2E9A00F942EF /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		6C397D8526BF2EAF00F942EF /* URN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URN.swift; sourceTree = "<group>"; };
+		6C397D8A26BF2F0B00F942EF /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		6C397D8F26BF2F4100F942EF /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		6C397D9526BF2FBB00F942EF /* GifResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifResponse.swift; sourceTree = "<group>"; };
+		6C397D9D26BF2FE400F942EF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6C397DA326BF304400F942EF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		6C397DAC26BF30C300F942EF /* GifService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifService.swift; sourceTree = "<group>"; };
+		6C397DCF26C11CBC00F942EF /* FeedsViewModelTestSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModelTestSpecification.swift; sourceTree = "<group>"; };
+		6C397DD426C11DF900F942EF /* MockGifService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGifService.swift; sourceTree = "<group>"; };
+		6C6B3FBD26BFCAAE00CECBB7 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C6B3FC026C0013B00CECBB7 /* LoadingGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingGif.gif; sourceTree = "<group>"; };
+		6C6B3FC226C01D7900CECBB7 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C397CF426BC252900F942EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C397D0A26BC252C00F942EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C397D1526BC252C00F942EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C397CEE26BC252900F942EF = {
+			isa = PBXGroup;
+			children = (
+				6C397CF926BC252900F942EF /* MyGiphy */,
+				6C397D1026BC252C00F942EF /* MyGiphyTests */,
+				6C397D1B26BC252C00F942EF /* MyGiphyUITests */,
+				6C397CF826BC252900F942EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C397CF826BC252900F942EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C397CF726BC252900F942EF /* MyGiphy.app */,
+				6C397D0D26BC252C00F942EF /* MyGiphyTests.xctest */,
+				6C397D1826BC252C00F942EF /* MyGiphyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C397CF926BC252900F942EF /* MyGiphy */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D6226BF2CB600F942EF /* Model */,
+				6C397D6B26BF2D3B00F942EF /* View */,
+				6C397D5F26BF2C8800F942EF /* Modules */,
+				6C397D7826BF2DDC00F942EF /* Common */,
+				6C397CFA26BC252900F942EF /* AppDelegate.swift */,
+				6C397D0326BC252C00F942EF /* Assets.xcassets */,
+				6C397D0826BC252C00F942EF /* Info.plist */,
+			);
+			path = MyGiphy;
+			sourceTree = "<group>";
+		};
+		6C397D1026BC252C00F942EF /* MyGiphyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D1126BC252C00F942EF /* MyGiphyTests.swift */,
+				6C397D1326BC252C00F942EF /* Info.plist */,
+				6C397DCF26C11CBC00F942EF /* FeedsViewModelTestSpecification.swift */,
+				6C397DD426C11DF900F942EF /* MockGifService.swift */,
+			);
+			path = MyGiphyTests;
+			sourceTree = "<group>";
+		};
+		6C397D1B26BC252C00F942EF /* MyGiphyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D1C26BC252C00F942EF /* MyGiphyUITests.swift */,
+				6C397D1E26BC252C00F942EF /* Info.plist */,
+			);
+			path = MyGiphyUITests;
+			sourceTree = "<group>";
+		};
+		6C397D5F26BF2C8800F942EF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D7B26BF2E3D00F942EF /* TabBar */,
+				6C397D6026BF2C9000F942EF /* Feeds */,
+				6C397D6126BF2C9900F942EF /* Favourite */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6C397D6026BF2C9000F942EF /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D6C26BF2D5100F942EF /* View */,
+				6C397D6D26BF2D5C00F942EF /* ViewModel */,
+				6C397DAB26BF30A900F942EF /* Service */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		6C397D6126BF2C9900F942EF /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D7726BF2DC700F942EF /* View */,
+				6C397D7626BF2DBA00F942EF /* ViewModel */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		6C397D6226BF2CB600F942EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D6326BF2CFE00F942EF /* GifDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C397D6B26BF2D3B00F942EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D0026BC252900F942EF /* Main.storyboard */,
+				6C397D0526BC252C00F942EF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C397D6C26BF2D5100F942EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D3026BC2CA100F942EF /* FeedsViewController.swift */,
+				6C397D5726BEFC7400F942EF /* GifTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C397D6D26BF2D5C00F942EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D6E26BF2D6F00F942EF /* FeedsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C397D7626BF2DBA00F942EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C6B3FC226C01D7900CECBB7 /* FavouriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C397D7726BF2DC700F942EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D3526BC2CC100F942EF /* FavouriteViewController.swift */,
+				6C6B3FBD26BFCAAE00CECBB7 /* GridCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C397D7826BF2DDC00F942EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6C6B3FBF26C0012800CECBB7 /* Loading Gif */,
+				6C397D7A26BF2E1000F942EF /* Constants */,
+				6C397DA226BF303800F942EF /* Data Store */,
+				6C397D7926BF2DEE00F942EF /* Extensions */,
+				6C397D7C26BF2E5300F942EF /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6C397D7926BF2DEE00F942EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D4726BC4EFA00F942EF /* UIColor+Extension.swift */,
+				6C397D3A26BC2EF100F942EF /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C397D7A26BF2E1000F942EF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D4226BC4E9C00F942EF /* MGColorScheme.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6C397D7B26BF2E3D00F942EF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D4C26BC52AE00F942EF /* MGTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6C397D7C26BF2E5300F942EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D9426BF2FA600F942EF /* ResponseModel */,
+				6C397D7D26BF2E9A00F942EF /* EndPoint.swift */,
+				6C397D8526BF2EAF00F942EF /* URN.swift */,
+				6C397D8A26BF2F0B00F942EF /* NetworkServiceProvider.swift */,
+				6C397D8F26BF2F4100F942EF /* URLSessionProvider.swift */,
+				6C397D9D26BF2FE400F942EF /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6C397D9426BF2FA600F942EF /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C397D9526BF2FBB00F942EF /* GifResponse.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		6C397DA226BF303800F942EF /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				6C397DA326BF304400F942EF /* DataStore.swift */,
+			);
+			path = "Data Store";
+			sourceTree = "<group>";
+		};
+		6C397DAB26BF30A900F942EF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6C397DAC26BF30C300F942EF /* GifService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6C6B3FBF26C0012800CECBB7 /* Loading Gif */ = {
+			isa = PBXGroup;
+			children = (
+				6C6B3FC026C0013B00CECBB7 /* LoadingGif.gif */,
+			);
+			path = "Loading Gif";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C397CF626BC252900F942EF /* MyGiphy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C397D2126BC252C00F942EF /* Build configuration list for PBXNativeTarget "MyGiphy" */;
+			buildPhases = (
+				6C397CF326BC252900F942EF /* Sources */,
+				6C397CF426BC252900F942EF /* Frameworks */,
+				6C397CF526BC252900F942EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGiphy;
+			productName = MyGiphy;
+			productReference = 6C397CF726BC252900F942EF /* MyGiphy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C397D0C26BC252C00F942EF /* MyGiphyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C397D2426BC252C00F942EF /* Build configuration list for PBXNativeTarget "MyGiphyTests" */;
+			buildPhases = (
+				6C397D0926BC252C00F942EF /* Sources */,
+				6C397D0A26BC252C00F942EF /* Frameworks */,
+				6C397D0B26BC252C00F942EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C397D0F26BC252C00F942EF /* PBXTargetDependency */,
+			);
+			name = MyGiphyTests;
+			productName = MyGiphyTests;
+			productReference = 6C397D0D26BC252C00F942EF /* MyGiphyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C397D1726BC252C00F942EF /* MyGiphyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C397D2726BC252C00F942EF /* Build configuration list for PBXNativeTarget "MyGiphyUITests" */;
+			buildPhases = (
+				6C397D1426BC252C00F942EF /* Sources */,
+				6C397D1526BC252C00F942EF /* Frameworks */,
+				6C397D1626BC252C00F942EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C397D1A26BC252C00F942EF /* PBXTargetDependency */,
+			);
+			name = MyGiphyUITests;
+			productName = MyGiphyUITests;
+			productReference = 6C397D1826BC252C00F942EF /* MyGiphyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C397CEF26BC252900F942EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6C397CF626BC252900F942EF = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					6C397D0C26BC252C00F942EF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6C397CF626BC252900F942EF;
+					};
+					6C397D1726BC252C00F942EF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6C397CF626BC252900F942EF;
+					};
+				};
+			};
+			buildConfigurationList = 6C397CF226BC252900F942EF /* Build configuration list for PBXProject "MyGiphy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C397CEE26BC252900F942EF;
+			productRefGroup = 6C397CF826BC252900F942EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C397CF626BC252900F942EF /* MyGiphy */,
+				6C397D0C26BC252C00F942EF /* MyGiphyTests */,
+				6C397D1726BC252C00F942EF /* MyGiphyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C397CF526BC252900F942EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C397D0726BC252C00F942EF /* LaunchScreen.storyboard in Resources */,
+				6C397D0426BC252C00F942EF /* Assets.xcassets in Resources */,
+				6C6B3FC126C0013C00CECBB7 /* LoadingGif.gif in Resources */,
+				6C397D0226BC252900F942EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C397D0B26BC252C00F942EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C397D1626BC252C00F942EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C397CF326BC252900F942EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C397D9E26BF2FE400F942EF /* NetworkError.swift in Sources */,
+				6C397D6F26BF2D6F00F942EF /* FeedsViewModel.swift in Sources */,
+				6C397D4826BC4EFA00F942EF /* UIColor+Extension.swift in Sources */,
+				6C397D3626BC2CC100F942EF /* FavouriteViewController.swift in Sources */,
+				6C397D3126BC2CA100F942EF /* FeedsViewController.swift in Sources */,
+				6C397D9626BF2FBB00F942EF /* GifResponse.swift in Sources */,
+				6C397D3B26BC2EF100F942EF /* UIImage+Extension.swift in Sources */,
+				6C397DAD26BF30C300F942EF /* GifService.swift in Sources */,
+				6C397DA426BF304400F942EF /* DataStore.swift in Sources */,
+				6C397D8B26BF2F0B00F942EF /* NetworkServiceProvider.swift in Sources */,
+				6C397D9026BF2F4100F942EF /* URLSessionProvider.swift in Sources */,
+				6C397D4326BC4E9C00F942EF /* MGColorScheme.swift in Sources */,
+				6C397D7E26BF2E9A00F942EF /* EndPoint.swift in Sources */,
+				6C6B3FBE26BFCAAE00CECBB7 /* GridCollectionViewCell.swift in Sources */,
+				6C397D8626BF2EAF00F942EF /* URN.swift in Sources */,
+				6C397D5826BEFC7400F942EF /* GifTableViewCell.swift in Sources */,
+				6C6B3FC326C01D7900CECBB7 /* FavouriteViewModel.swift in Sources */,
+				6C397D6426BF2CFE00F942EF /* GifDataModel.swift in Sources */,
+				6C397CFB26BC252900F942EF /* AppDelegate.swift in Sources */,
+				6C397D4D26BC52AE00F942EF /* MGTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C397D0926BC252C00F942EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C397DD526C11DF900F942EF /* MockGifService.swift in Sources */,
+				6C397DD026C11CBD00F942EF /* FeedsViewModelTestSpecification.swift in Sources */,
+				6C397D1226BC252C00F942EF /* MyGiphyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C397D1426BC252C00F942EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C397D1D26BC252C00F942EF /* MyGiphyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C397D0F26BC252C00F942EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C397CF626BC252900F942EF /* MyGiphy */;
+			targetProxy = 6C397D0E26BC252C00F942EF /* PBXContainerItemProxy */;
+		};
+		6C397D1A26BC252C00F942EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C397CF626BC252900F942EF /* MyGiphy */;
+			targetProxy = 6C397D1926BC252C00F942EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C397D0026BC252900F942EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C397D0126BC252900F942EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C397D0526BC252C00F942EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C397D0626BC252C00F942EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C397D1F26BC252C00F942EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C397D2026BC252C00F942EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C397D2226BC252C00F942EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378L6H48M7;
+				INFOPLIST_FILE = MyGiphy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekvasudev.MyGiphy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C397D2326BC252C00F942EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378L6H48M7;
+				INFOPLIST_FILE = MyGiphy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekvasudev.MyGiphy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C397D2526BC252C00F942EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378L6H48M7;
+				INFOPLIST_FILE = MyGiphyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekvasudev.MyGiphyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGiphy.app/MyGiphy";
+			};
+			name = Debug;
+		};
+		6C397D2626BC252C00F942EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378L6H48M7;
+				INFOPLIST_FILE = MyGiphyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekvasudev.MyGiphyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGiphy.app/MyGiphy";
+			};
+			name = Release;
+		};
+		6C397D2826BC252C00F942EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378L6H48M7;
+				INFOPLIST_FILE = MyGiphyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekvasudev.MyGiphyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGiphy;
+			};
+			name = Debug;
+		};
+		6C397D2926BC252C00F942EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378L6H48M7;
+				INFOPLIST_FILE = MyGiphyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekvasudev.MyGiphyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGiphy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C397CF226BC252900F942EF /* Build configuration list for PBXProject "MyGiphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C397D1F26BC252C00F942EF /* Debug */,
+				6C397D2026BC252C00F942EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C397D2126BC252C00F942EF /* Build configuration list for PBXNativeTarget "MyGiphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C397D2226BC252C00F942EF /* Debug */,
+				6C397D2326BC252C00F942EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C397D2426BC252C00F942EF /* Build configuration list for PBXNativeTarget "MyGiphyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C397D2526BC252C00F942EF /* Debug */,
+				6C397D2626BC252C00F942EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C397D2726BC252C00F942EF /* Build configuration list for PBXNativeTarget "MyGiphyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C397D2826BC252C00F942EF /* Debug */,
+				6C397D2926BC252C00F942EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C397CEF26BC252900F942EF /* Project object */;
+}
